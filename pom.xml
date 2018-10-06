@@ -12,6 +12,7 @@
         <module>ServerCore</module>
         <module>Lobby</module>
         <module>Bungee</module>
+        <module>minigames</module>
     </modules>
 
 

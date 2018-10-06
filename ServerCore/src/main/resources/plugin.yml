@@ -1,0 +1,6 @@
+name: Servercore
+version: ${project.version}
+main: nl.thedutchruben.servercore.Servercore
+authors: [TheDutchRuben]
+description: ServerCore Plugin
+website: www.thedutchruben.nl

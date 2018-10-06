@@ -1,0 +1,7 @@
+name: Lobby
+version: ${project.version}
+main: nl.thedutchruben.lobby.Lobby
+depend: [ServerCore]
+authors: [TheDutchRuben]
+description: Lobby plugin from the server project
+website: www.thdutchruben.nl

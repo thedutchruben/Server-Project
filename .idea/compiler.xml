@@ -6,10 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Bungee" />
-        <module name="Lobby" />
+        <module name="bungee" />
+        <module name="lobby" />
         <module name="ServerCore" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Bungee" target="1.5" />
+      <module name="Lobby" target="1.5" />
+      <module name="minigames" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

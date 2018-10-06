@@ -5,17 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>nl.thedutchruben</groupId>
-    <artifactId>servercore</artifactId>
+    <artifactId>lobby</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Servercore</name>
+    <name>Lobby</name>
 
-    <description>ServerCore Plugin</description>
+    <description>Lobby plugin from the server project</description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <url>www.thedutchruben.nl</url>
+    <url>www.thdutchruben.nl</url>
 
     <build>
         <defaultGoal>clean package</defaultGoal>

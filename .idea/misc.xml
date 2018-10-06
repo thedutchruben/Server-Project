@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="EntryPointsManager">
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="org.bukkit.event.EventHandler" />
+      <item index="1" class="java.lang.String" itemvalue="net.md_5.bungee.event.EventHandler" />
     </list>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
@@ -10,7 +11,17 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/ServerCore/pom.xml" />
+        <option value="$PROJECT_DIR$/bungee/pom.xml" />
+        <option value="$PROJECT_DIR$/lobby/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Bungee/pom.xml" />
+        <option value="$PROJECT_DIR$/Lobby/pom.xml" />
+        <option value="$PROJECT_DIR$/minigames/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_10" project-jdk-name="10" project-jdk-type="JavaSDK">

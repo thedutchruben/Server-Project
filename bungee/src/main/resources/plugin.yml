@@ -1,0 +1,4 @@
+name: Bungeecord
+version: ${project.version}
+main: nl.thedutchruben.bungeecord.Bungeecord
+description: Bungeecord plugin from the server project
