@@ -9,6 +9,8 @@ import net.md_5.bungee.event.EventHandler;
 import nl.thedutchruben.bungeecord.Bungeecord;
 import nl.thedutchruben.bungeecord.Settings;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 public class ProxyPingListener implements Listener {
@@ -20,11 +22,17 @@ public class ProxyPingListener implements Listener {
         ServerPing.Protocol version = ping.getVersion();
         version.setName("1.0 -1.13.1");
         version.setProtocol(version.getProtocol());
+
         players.setOnline(0);
         players.setMax(0);
-        players.setSample(new ServerPing.PlayerInfo[] {
-                new ServerPing.PlayerInfo("§aWelkom op <SERVERNAME> server!", UUID.randomUUID()),
-                new ServerPing.PlayerInfo("§6Join nu!", UUID.randomUUID())});
+        List<ServerPing.PlayerInfo> playerInfos = new ArrayList<>();
+        Bungeecord.getInstance().getSettings().getPlayers().forEach(s -> {
+            playerInfos.add(new ServerPing.PlayerInfo(s,UUID.randomUUID()));
+        });
+
+
+        players.setSample(playerInfos.toArray());
+
         ping.setPlayers(players);
         ping.setVersion(version);
         ping.setDescriptionComponent(new TextComponent(ChatColor.translateAlternateColorCodes('&',
